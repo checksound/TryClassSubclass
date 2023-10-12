@@ -4,9 +4,9 @@ public class TestShapes {
 
 	public static void main(String[] args) {
 		
-		Shape p1 = new Shape(6, 7);		
-		System.out.printf("%s - perimeter: %f, area: %f\n", p1, 
-				p1.area(), p1.perimeter());
+		Shape point = new Point(6, 7);		
+		System.out.printf("%s - perimeter: %f, area: %f\n", point, 
+				point.area(), point.perimeter());
 		
 		Circle circle = new Circle(9, 10, 6);		
 		System.out.printf("%s - perimeter: %f, area: %f\n", circle, 

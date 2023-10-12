@@ -2,11 +2,11 @@ package shapes;
 
 /**
  * 
- * @param x coordinate ascissa
- * @param y coordinate ordinata 
+ * @param x coordinata ascissa del centro figura
+ * @param y coordinata ordinata  del centro figura
  */
 
-public class Shape {
+public abstract class Shape {
 	
 	protected int x;
 	protected int y;
@@ -24,17 +24,8 @@ public class Shape {
 		return y;
 	}
 	
-	public double area() {
-		return 0;
-	}
+	public abstract double area();
 	
-	public double perimeter() {
-		return 0;
-	}
-
-	@Override
-	public String toString() {
-		return "Shape [x=" + x + ", y=" + y + "]";
-	}
+	public abstract double perimeter();
 	
 }
