@@ -1,10 +1,10 @@
 package shapes;
 
-public class Circle extends Point {
+public class Circle extends Shape {
 	
 	private float radius;
 	
-	public Circle(float x, float y, float radius) {
+	public Circle(int x, int y, float radius) {
 		super(x, y);
 		this.radius = radius;
 	}

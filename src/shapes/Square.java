@@ -1,10 +1,10 @@
 package shapes;
 
-public class Square extends Point {
+public class Square extends Shape {
 	
 	private float side;
 	
-	public Square(float x, float y, int side) {
+	public Square(int x, int y, int side) {
 		super(x, y);
 		this.side = side;
 	}

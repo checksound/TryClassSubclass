@@ -1,11 +1,17 @@
 package shapes;
 
-public class Point {
+/**
+ * 
+ * @param x coordinate ascissa
+ * @param y coordinate ordinata 
+ */
+
+public class Shape {
 	
-	protected float x;
-	protected float y;
+	protected int x;
+	protected int y;
 	
-	public Point(float x, float y) {
+	public Shape(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}

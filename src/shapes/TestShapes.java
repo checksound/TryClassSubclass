@@ -4,7 +4,7 @@ public class TestShapes {
 
 	public static void main(String[] args) {
 		
-		Point p1 = new Point(6, 7);		
+		Shape p1 = new Shape(6, 7);		
 		System.out.printf("%s - perimeter: %f, area: %f\n", p1, 
 				p1.area(), p1.perimeter());
 		
