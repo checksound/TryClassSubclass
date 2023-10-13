@@ -1,12 +1,9 @@
-package shapesprintable;
+package shapesdrawable;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Point extends Shape {
-	
-	protected int x;
-	protected int y;
+public class Point extends Shape implements Drawable {
 	
 	public Point(int x, int y) {
 		super(x, y);
@@ -34,11 +31,12 @@ public class Point extends Shape {
 	}
 
 	@Override
-	public void print(Graphics g) {		
+	public void draw(Graphics g) {		
 		System.out.printf("%s - perimeter: %f, area: %f\n", this, 
 				area(), perimeter());
 		
-		g.setColor(Color.BLACK);
+		g.setColor(Color.RED);
+		
 		g.drawLine(x, y - 2, x, y + 2);
 		g.drawLine(x - 2, y, x + 2, y);
 	} 

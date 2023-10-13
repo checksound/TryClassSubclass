@@ -42,4 +42,8 @@ Circle: + double area()
 
 ```
 
+## Esempio con Interface
+
+
+
 Vedi: https://iisponti.gitbook.io/tecnologie_quinta_2023_24/esempio-classi-sottoclassi

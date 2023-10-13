@@ -1,4 +1,4 @@
-package shapesprintable;
+package shapesdrawable;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -18,13 +18,13 @@ public class SimpleGraphicsShapes extends JPanel {
     */
 	public void drawPicture(Graphics g, int width, int height) {
 		
-		Point point = new Point(56, 70);		
-		Circle circle = new Circle(59, 40, 6);		
-		Square square = new Square(12, 4, 15);
+		Point point = new Point(200, 200);		
+		Circle circle = new Circle(590, 400, 60);		
+		Square square = new Square(120, 400, 150);
 				
-		point.print(g);
-		circle.print(g);		
-		square.print(g);
+		point.draw(g);
+		circle.draw(g);		
+		square.draw(g);
 		
 	}
 
@@ -47,9 +47,7 @@ public class SimpleGraphicsShapes extends JPanel {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
         
-		window.setVisible(true);
-		
-		
+		window.setVisible(true);		
 
 	}
 	

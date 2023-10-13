@@ -1,9 +1,9 @@
-package shapesprintable;
+package shapesdrawable;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
 	
 	private int radius;
 	
@@ -32,11 +32,11 @@ public class Circle extends Shape {
 	}
 	
 	@Override
-	public void print(Graphics g) {
+	public void draw(Graphics g) {
 		System.out.printf("%s - perimeter: %f, area: %f\n", this, 
 				area(), perimeter());
 		
-		g.setColor(Color.BLACK);
+		g.setColor(Color.GREEN);
 		
 		g.drawOval(x, y, radius, radius);
 	}

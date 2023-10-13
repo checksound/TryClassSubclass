@@ -1,9 +1,9 @@
-package shapesprintable;
+package shapesdrawable;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Square extends Shape {
+public class Square extends Shape implements Drawable {
 	
 	private int side;
 	
@@ -32,11 +32,11 @@ public class Square extends Shape {
 	}
 	
 	@Override
-	public void print(Graphics g) {
+	public void draw(Graphics g) {
 		System.out.printf("%s - perimeter: %f, area: %f\n", this, 
 				area(), perimeter());		
 		
-		g.setColor(Color.BLACK);
+		g.setColor(Color.BLUE);
 		g.drawRect(x - side/2, y - side/2, side, side);
 	}
 }
